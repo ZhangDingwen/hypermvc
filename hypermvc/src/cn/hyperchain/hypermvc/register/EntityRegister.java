@@ -50,7 +50,6 @@ public class EntityRegister {
                 String entityDescription = getMatch(RegexString.entityDescription);
                 if (entityDescription == null)
                     throw new RegisterException("@ApiModel注解无法解读，请严格按下面的格式写注解：@ApiModel(\"XXX\")");
-
                 entityInfo.description = entityDescription;
 
                 System.out.println(entityInfo.description);
